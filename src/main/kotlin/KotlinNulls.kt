@@ -8,6 +8,9 @@ class KotlinNulls {
 
 }
 
+data class Outer(val inner1: Inner1? = null)
+data class Inner1(val inner2: Inner2? = null)
+data class Inner2(val target: String? = null)
 
 fun main() {
 
@@ -16,16 +19,10 @@ fun main() {
     //k = null //won't compile
     k.foo() //works fine
 
-    var knull: KotlinNulls? = KotlinNulls()
-    knull = null //works fine
+    var knull: KotlinNulls? = null
     //knull.foo() //won't compile since compiler is not sure about the nullability of this var
-    knull?.foo()
 
-    if (knull != null) {
-        knull.foo()
-    }
-
-    //company?.department?.head?.name
+    Outer().inner1?.inner2?.target
 
     val fallback = knull?.foo() ?: "abc"
 

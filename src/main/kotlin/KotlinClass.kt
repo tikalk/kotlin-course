@@ -6,7 +6,7 @@ class KotlinClass {
 
         @JvmStatic
         fun main(args: Array<String>) {
-            //println(JavaClass().jfoo())
+            println(JavaClass().jfoo())
         }
 
     }

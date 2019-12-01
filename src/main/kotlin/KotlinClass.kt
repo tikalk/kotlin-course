@@ -1,6 +1,10 @@
 class KotlinClass {
 
-    fun kfoo() = "called method kfoo()"
+    //fun kfoo() = "called method kfoo()"
+
+    fun kfoo(): String {
+        return "called method kfoo()"
+    }
 
     companion object {
 

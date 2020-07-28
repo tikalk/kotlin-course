@@ -4,7 +4,7 @@ package com.kotlin.learn
 /* A class in Kotlin can have a primary constructor and one or more secondary constructors
 * The primary constructor cannot contain any code.
 */
-class InitOrder(name: String) {
+class InitOrder constructor(name: String) {
 
     val firstProperty = "First property: $name".also(::println)
 

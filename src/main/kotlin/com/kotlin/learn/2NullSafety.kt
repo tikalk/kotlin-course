@@ -10,9 +10,9 @@ fun nullableChecks() {
 
 
     /* Declares a nullable String variable */
-    var nullable: String? = "You can keep a null here"      // Declares a nullable String variable.
+    var nullable: String? = "You can keep a null here"
 
-    /*S ets the null value to the nullable variable.This is OK. */
+    /*Sets the null value to the nullable variable.This is OK. */
     nullable = null
 
     /* When inferring types, the compiler assumes non-null for variables that are initialized with a value. */

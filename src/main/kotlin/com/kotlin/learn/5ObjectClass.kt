@@ -23,7 +23,7 @@ object CarFactory {
     at runtime those are still instance members of real objects
 * */
 class Car(val horsepowers: Int) {
-    companion object {
+    companion object CarO{
         val cars = mutableListOf<Car>()
 
         fun makeCar(horsepowers: Int): Car {

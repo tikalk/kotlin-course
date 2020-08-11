@@ -14,7 +14,7 @@ class `9HigherOrderFunctions` {
     fun sum(x: Int, y: Int) = x + y                                 // Declares a function that matches the operationsignature
 
     fun main1() {
-        val sumResult = calculate(4, 5, ::sum)                       // :: is the notation that references a function by name
+        val sumResult = calculate(4, 5, ::sum)              // :: is the notation that references a function by name
         val mulResult = calculate(4, 5) { a, b -> a * b }   // passing in a lambda as a function argument (If the last parameter of a function is a function,then a lambda expression passed as the corresponding argument can be placed outside the parentheses)
 
          println("sumResult $sumResult, mulResult $mulResult")

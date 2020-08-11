@@ -8,12 +8,16 @@ Overriding methods or attributes requires the override modifier.
 Add implementation for sayHello
 */
 open class Tiger(val origin: String) {
-    fun sayHello() {
+     open fun sayHello() {
         println("A tiger from $origin says: grrhhh!")
     }
 }
 
-class SiberianTiger : Tiger("Siberia")
+class SiberianTiger : Tiger("Siberia"){
+    override fun sayHello() {
+        println("A tiger from $origin says: grrhhh!")
+    }
+}
 
 fun main() {
     val tiger: Tiger = SiberianTiger()

@@ -5,8 +5,8 @@ fun nullableChecks() {
     /*  Declares a non-null String variable. */
     var neverNull: String = "This can't be null"
 
-    /*When trying to assign null to non-nullable variable, a compilation error is produced. */
-    neverNull = null
+    /*When trying to assign null to non-nullable variable, a compilation error is produced.  - remove comments and see error */
+    //neverNull = null
 
 
     /* Declares a nullable String variable */
@@ -18,14 +18,14 @@ fun nullableChecks() {
     /* When inferring types, the compiler assumes non-null for variables that are initialized with a value. */
     var inferredNonNull = "The compiler assumes non-null"
 
-    /* When trying to assign null to a variable with inferred type, a compilation error is produced. */
-    inferredNonNull = null
+    /* When trying to assign null to a variable with inferred type, a compilation error is produced. - remove comments and see error  */
+    //inferredNonNull = null
 
     /* Calls the function with a String (non-nullable) argument. This is OK. */
     strLength(neverNull)
 
-    /* When calling the function with a String? (nullable) argument, a compilation error is produced  */
-    strLength(nullable)
+    /* When calling the function with a String? (nullable) argument, a compilation error is produced - remove comments and see error  */
+    //strLength(nullable)
 
 }
 

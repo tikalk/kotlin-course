@@ -21,7 +21,7 @@ class InitOrder constructor(name: String) {
 }
 
 /* for declaring properties and initializing them from the primary constructor */
-class Customer(val name: String) {
+class Customer(val name: String="") {
     var children: MutableList<Customer> = mutableListOf()
 
     /*

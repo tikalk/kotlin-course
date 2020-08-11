@@ -13,12 +13,12 @@ fun declareVariables() {
     val c = 3                  // Declares an immutable variable and initializing it without specifying the type. The compiler infers the type Int
 
     /*
-    remove the initialization -->
+    if i remove the initialization of e i get an error-->
     An attempt to use the variable causes a compiler error: Variable 'e' must be initialized.
     The var must be initialized before the first read.
     No matter where
     */
-    var e: Int
+    var e: Int=1
     println(e)  //
 }
 
